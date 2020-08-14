@@ -89,12 +89,12 @@ $(function() {
   		// clear the table before populating it with more data
   		$("#example").DataTable().clear();
   		var aux;
-  		data.records.forEach(function(item){
-  			aux = item.record_timestamp.split("T");
+  		data.records.fields.forEach(function(item){
+  			aux = item.fecha_publicacion;
   			$('#example').dataTable().fnAddData( [
   				aux[0],
-  				item.record_timestamp,
-  				'<center><a href="#detallePremio" id="'+item.identificador+'" class="btn btn-cyl">Ver</a></center>'
+  				item.organismo,
+  				'<center><a href="#detallePremio" id="'+item.enlace_fichero_html+'" class="btn btn-cyl">Ver</a></center>'
   			]);
   		});
   	}
