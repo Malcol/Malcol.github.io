@@ -90,11 +90,11 @@ $(function() {
   		$("#example").DataTable().clear();
   		var aux;
   		data.records.forEach(function(item){
-  			aux = item.fields.fecha_publicacion.split('').reverse().join('');
+  			aux = item.fields.fecha_publicacion.split('').reverse();
   			$('#example').dataTable().fnAddData( [
   				aux[0],
   				item.fields.organismo,
-  				'<center><a href="item.fields.enlace_fichero_html" id="'+item.fields.enlace_fichero_html+'" class="btn btn-cyl">Ver</a></center>'
+  				'<center><a href="'+item.fields.enlace_fichero_html+'" id="'+item.fields.enlace_fichero_html+'" class="btn btn-cyl">Ver</a></center>'
   			]);
   		});
   	}
