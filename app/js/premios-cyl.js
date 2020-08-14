@@ -94,7 +94,7 @@ $(function() {
   			$('#example').dataTable().fnAddData( [
   				aux[0],
   				item.fields.organismo,
-  				'<center><a href="'item.fields.enlace_fichero_html'" id="'+item.fields.enlace_fichero_html+'" class="btn btn-cyl">Ver</a></center>'
+  				'<center><a href="#descripcion" id="'+item.fields.enlace_fichero_html+'" class="btn btn-cyl">Ver</a></center>'
   			]);
   		});
   	}
