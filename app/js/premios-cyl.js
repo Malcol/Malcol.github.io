@@ -62,7 +62,7 @@ $(function() {
         } );
     } );
     
-	var testDataUrl = "https://analisis.datosabiertos.jcyl.es/api/records/1.0/search/?dataset=bocyl&q=&rows=200&facet=fecha_publicacion&facet=seccion&facet=subseccion&facet=organismo&facet=apartado&refine.apartado=B.2.+Oposiciones+y+Concursos";
+	var testDataUrl = "https://analisis.datosabiertos.jcyl.es/api/records/1.0/search/?dataset=bocyl&q=&rows=100&facet=fecha_publicacion&facet=seccion&facet=subseccion&facet=organismo&facet=apartado&refine.apartado=B.2.+Oposiciones+y+Concursos";
 	
 	loadDataTable();				  					
 
