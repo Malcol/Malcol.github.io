@@ -62,7 +62,7 @@ $(function() {
         } );
     } );
     
-	var testDataUrl = "https://analisis.datosabiertos.jcyl.es/api/records/1.0/search/?dataset=bocyl&q=&rows=100&facet=fecha_publicacion&facet=seccion&facet=subseccion&facet=organismo&facet=apartado&refine.apartado=B.2.+Oposiciones+y+Concursos";
+	var testDataUrl = "https://analisis.datosabiertos.jcyl.es/api/records/1.0/search/?dataset=bocyl&q=&rows=200&facet=fecha_publicacion&facet=seccion&facet=subseccion&facet=organismo&facet=apartado&refine.apartado=B.2.+Oposiciones+y+Concursos";
 	
 	loadDataTable();				  					
 
@@ -90,9 +90,9 @@ $(function() {
   		$("#example").DataTable().clear();
   		var aux;
   		data.records.forEach(function(item){
-  			aux = item.fields.fecha_publicacion.split('').reverse();
+  			aux = item.fields.fecha_publicacion;
   			$('#example').dataTable().fnAddData( [
-  				aux[0],
+  				aux,
   				item.fields.organismo,
   				'<center><a href="'item.fields.enlace_fichero_html'" id="'+item.fields.enlace_fichero_html+'" class="btn btn-cyl">Ver</a></center>'
   			]);
