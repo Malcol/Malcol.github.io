@@ -92,7 +92,7 @@ $(function() {
   		data.records.forEach(function(item){
   			aux = item.fields.fecha_publicacion;
   			$('#example').dataTable().fnAddData( [
-  				aux,
+  				aux[0],
   				item.fields.organismo,
   				'<center><a href="'item.fields.enlace_fichero_html'" id="'+item.fields.enlace_fichero_html+'" class="btn btn-cyl">Ver</a></center>'
   			]);
