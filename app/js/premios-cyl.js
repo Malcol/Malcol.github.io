@@ -90,11 +90,11 @@ $(function() {
   		$("#example").DataTable().clear();
   		var aux;
   		data.records.forEach(function(item){
-  			aux = item.fields.fecha_publicacion;
+  			aux = item.fields.fecha_publicacion.toLocalString();
   			$('#example').dataTable().fnAddData( [
   				aux,
   				item.fields.organismo,
-  				'<center><a href="item.fields.enlace_fichero_html" id="'+item.fields.enlace_fichero_html+'" class="btn btn-cyl">Ver</a></center>'
+  				'<center><a href="'+item.fields.enlace_fichero_html+'" id="'+item.fields.enlace_fichero_html+'" class="btn btn-cyl">Ver</a></center>'
   			]);
   		});
   	}
