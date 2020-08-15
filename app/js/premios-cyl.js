@@ -90,9 +90,9 @@ $(function() {
   		$("#example").DataTable().clear();
   		var aux;
   		data.records.forEach(function(item){
-  			aux = item.fields.fecha_publicacion.split('');
+  			aux = item.fields.fecha_publicacion;
   			$('#example').dataTable().fnAddData( [
-  				aux[0],
+  				aux,
   				item.fields.organismo,
   				'<center><a href="#descripcion" id="'+item.fields.enlace_fichero_html+'" class="btn btn-cyl">Ver</a></center>'
   			]);
