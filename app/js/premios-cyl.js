@@ -90,7 +90,7 @@ $(function() {
   		$("#example").DataTable().clear();
   		var aux;
   		data.records.forEach(function(item){
-  			aux = item.fields.fecha_publicacion.toLocalString();
+  			aux = item.fields.fecha_publicacion;
   			$('#example').dataTable().fnAddData( [
   				aux,
   				item.fields.organismo,
